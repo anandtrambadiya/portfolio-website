@@ -4,56 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anand Trambadiya</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="main" >
-        <!-- photo -->
-            <img src="static/profile pic.JPG" alt="profile pic">
-        <!-- Name -->
-            <h2>Anand Trambadiya</h2>
-        <!-- description -->
-            <p>I am Computer Science Student.</p>
-        <!-- socials link -->
-            <a href="https://www.linkedin.com/in/anandtrambadiya/">linkedin profile</a>
-            <br>
-        <!-- Contact Me -->
-            <button>Contact Me</button>
-    </div>
-    <div id="project">
-        <!-- add projects cards -->
-         <table>
-            <thead>
-                <th>Sr. No.</th>
-                <th>Project Name</th>
-            </thead>
-            <tr>
-                <td>1.</td>
-                <td>Project ABC</td>
-
-            </tr>
-            <tr>
-                <td>2.</td>
-                <td>Project XYZ</td>
-            </tr>
-         </table>
-    </div>
-    <div id="tech">
-        <!-- add tech stacks you know -->
-         <ul>
-            <li>C</li>
-            <li>C++</li>
-            <li>Python</li>
-         </ul>
-    </div>
-    <div id="contact me">
-        <!-- contact me form -->
-         <button>
-            contact me 
-         </button>
-    </div>
-    <div id="footer">
-        <!-- socials -->
-        <a href="https://www.linkedin.com/in/anandtrambadiya/">linkedin profile</a>
-    </div>
+    <header>
+        <img src="static/profile pic.JPG" alt="A profile picture of Anand Trambadiya">
+        <h1>Anand Trambadiya</h1>
+        <p>Computer Science Student | Aspiring Developer</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#tech">Tech Stack</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a passionate Computer Science student specializing in software development, web design, and robotics.</p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <h3>Project ABC</h3>
+                <p>Description about Project ABC.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project XYZ</h3>
+                <p>Description about Project XYZ.</p>
+            </div>
+        </section>
+        <section id="tech">
+            <h2>Tech Stack</h2>
+            <ul>
+                <li>C</li>
+                <li>C++</li>
+                <li>Python</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea><br>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Connect with me:</p>
+        <a href="https://www.linkedin.com/in/anandtrambadiya/">LinkedIn</a>
+        <a href="https://github.com/anandtrambadiya">GitHub</a>
+    </footer>
 </body>
 </html>
