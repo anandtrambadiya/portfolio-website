@@ -4,63 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anand Trambadiya</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRgGQtIE9N8BSHo36GjoQ1F8z7Cj4rEcr6y9p3p0k" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <img src="static/profile pic.JPG" alt="A profile picture of Anand Trambadiya">
-        <h1>Anand Trambadiya</h1>
-        <p>Computer Science Student | Aspiring Developer</p>
-    </header>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#tech">Tech Stack</a>
-        <a href="#contact">Contact</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Anand Trambadiya</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tech">Tech Stack</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <main>
-        <section id="about">
+    
+    <header class="text-center py-5 bg-light">
+        <img src="static/profile pic.JPG" alt="Profile Picture" class="rounded-circle" width="150">
+        <h1 class="mt-3">Anand Trambadiya</h1>
+        <p class="lead">Computer Science Student | Aspiring Developer</p>
+    </header>
+
+    <main class="container my-5">
+        <section id="about" class="text-center mb-5">
             <h2>About Me</h2>
             <p>I am a passionate Computer Science student specializing in software development, web design, and robotics.</p>
         </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project-card">
-                <h3>Project ABC</h3>
-                <p>Description about Project ABC.</p>
-            </div>
-            <div class="project-card">
-                <h3>Project XYZ</h3>
-                <p>Description about Project XYZ.</p>
+
+        <section id="projects" class="mb-5">
+            <h2 class="text-center">Projects</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title">Project ABC</h3>
+                            <p class="card-text">Description about Project ABC.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title">Project XYZ</h3>
+                            <p class="card-text">Description about Project XYZ.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <section id="tech">
+
+        <section id="tech" class="text-center mb-5">
             <h2>Tech Stack</h2>
-            <ul>
-                <li>C</li>
-                <li>C++</li>
-                <li>Python</li>
-            </ul>
+            <div class="row">
+                <div class="col-md-4"><span class="badge bg-primary">C</span></div>
+                <div class="col-md-4"><span class="badge bg-secondary">C++</span></div>
+                <div class="col-md-4"><span class="badge bg-success">Python</span></div>
+            </div>
         </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required><br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message"></textarea><br>
-                <button type="submit">Send</button>
+
+        <section id="contact" class="mb-5">
+            <h2 class="text-center">Contact</h2>
+            <form class="mx-auto" style="max-width: 600px;">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name:</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message:</label>
+                    <textarea id="message" name="message" class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Send</button>
             </form>
         </section>
     </main>
-    <footer>
+    
+    <footer class="text-center py-4 bg-dark text-light">
         <p>Connect with me:</p>
-        <a href="https://www.linkedin.com/in/anandtrambadiya/">LinkedIn</a>
-        <a href="https://github.com/anandtrambadiya">GitHub</a>
+        <a href="https://www.linkedin.com/in/anandtrambadiya/" class="text-light me-3">LinkedIn</a>
+        <a href="https://github.com/anandtrambadiya" class="text-light">GitHub</a>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
